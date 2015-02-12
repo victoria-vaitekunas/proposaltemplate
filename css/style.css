@@ -194,7 +194,6 @@ h1 {
   font-family: 'Lato', Helvetica, Arial, sans-serif;
   font-weight: 300;
   text-transform: uppercase;
-  margin-left: 5%;
   font-size: 4rem;
   font-weight: 300;
 }
@@ -205,12 +204,31 @@ h2 {
   text-transform: uppercase;
   font-weight: 300;
   font-size: 2rem;
+  padding: 4rem 0 2rem 0;
+}
+
+h3 {
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+  line-height: 1.4;
+  font-size: 1rem;
+  color: #121212;
+  font-size: 1.7rem;
+  margin: 4rem 0 0.25rem 0;
+}
+
+h4 {
+  font-family: 'Lato', Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  margin: 0.25rem 0 1rem 0;
 }
 
 p {
   font-family: 'Open Sans', Helvetica, Arial, sans-serif;
   line-height: 1.4;
   font-size: 1rem;
+  color: #121212;
   font-size: 1.2rem;
 }
 
@@ -224,11 +242,12 @@ footer {
 //=======================================||
 */
 header {
-  border-bottom: 1px solid #080808;
+  border-bottom: 1px solid #00d1c3;
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
+  background: #FAFAFA;
 }
 
 /*=======================================||
@@ -236,9 +255,8 @@ header {
 //=======================================||
 */
 nav {
-  position: absolute;
-  top: 2rem;
-  right: 4rem;
+  padding: 1rem 4rem 1rem 0rem;
+  float: right;
 }
 
 nav ul {
@@ -258,6 +276,10 @@ nav a {
 nav a:hover,
 nav a:focus {
   border-bottom: 2px solid #00d1c3;
+  outline: 0;
+  border-top: 0;
+  border-right: 0;
+  border-left: 0;
   -webkit-transition: 0.5s;
           transition: 0.5s;
 }
@@ -266,6 +288,10 @@ nav a:focus {
 //			BODY STYLES                  ||
 //=======================================||
 */
+.teal {
+  color: #00d1c3;
+}
+
 .wrapper {
   width: 70%;
   margin: 14rem 25% 0 5%;

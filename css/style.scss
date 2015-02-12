@@ -4,6 +4,7 @@
 */
 $white: #FAFAFA;
 $black: #080808;
+$black2: lighten($black, 4%);
 $teal: #00d1c3;
 $m-left: 5%;
 
@@ -20,6 +21,7 @@ $m-left: 5%;
 	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
 	line-height: 1.4;
 	font-size: 1rem;
+	color: $black2;
 }
 /*=======================================||
 //			CLEARFIX/BORDERBOX/RESET     ||
@@ -50,7 +52,7 @@ body {
 }
 h1 {
 	@include headerstyle;
-	margin-left: $m-left;
+	//margin-left: $m-left;
 	font-size: 4rem;
 	font-weight: 300;
 }
@@ -58,6 +60,17 @@ h2 {
 	@include headerstyle;
 	font-weight: 300;
 	font-size: 2rem;
+	padding: 4rem 0 2rem 0;
+}
+h3 {
+	@include parastyle;
+	font-size: 1.7rem;
+	margin: 4rem 0 0.25rem 0;
+}
+h4 {
+	@include headerstyle;
+	font-size: 1.2rem;
+	margin: 0.25rem 0 1rem 0;
 }
 p {
  	@include parastyle;
@@ -72,11 +85,12 @@ footer {
 //=======================================||
 */
 header {
-	border-bottom: 1px solid $black;
+	border-bottom: 1px solid $teal;
 	position: fixed;
 	top: 0;
 	left: 0;
 	right: 0;
+	background: $white;	
 }
 
 
@@ -85,9 +99,11 @@ header {
 //=======================================||
 */
 nav {
-	position: absolute;
-	top: 2rem;
-	right: 4rem;
+	padding: 1rem 4rem 1rem 0rem;
+	float: right;
+	//position: absolute;
+	//top: 2rem;
+	// right: 4rem;
 }
 nav ul {
 	list-style: none;
@@ -103,12 +119,19 @@ nav a {
 nav a:hover,
 nav a:focus {
 	border-bottom: 2px solid $teal;
+	outline: 0;
+	border-top: 0;
+	border-right: 0;
+	border-left: 0;
 	transition: 0.5s;
 }
 /*=======================================||
 //			BODY STYLES                  ||
 //=======================================||
 */
+.teal {
+	color: $teal;
+}
 .wrapper {
 	width: 70%;
 	margin: 14rem 25% 0 $m-left;
