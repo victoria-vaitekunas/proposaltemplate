@@ -224,12 +224,30 @@ h4 {
   margin: 0.25rem 0 1rem 0;
 }
 
+h5 {
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+  line-height: 1.4;
+  font-size: 1rem;
+  color: #121212;
+  font-size: 1.7rem;
+  margin: 4rem 0 0.25rem 0;
+  color: #00d1c3;
+}
+
 p {
   font-family: 'Open Sans', Helvetica, Arial, sans-serif;
   line-height: 1.4;
   font-size: 1rem;
   color: #121212;
   font-size: 1.2rem;
+}
+p a {
+  color: #222222;
+}
+p a:hover {
+  color: #00d1c3;
+  -webkit-transition: 0.5s;
+          transition: 0.5s;
 }
 
 header,
@@ -294,5 +312,66 @@ nav a:focus {
 
 .wrapper {
   width: 70%;
-  margin: 14rem 25% 0 5%;
+  margin: 14rem 25% 4rem 5%;
+}
+
+.description {
+  width: calc(100% - 75px);
+  float: left;
+  padding-right: 4rem;
+}
+
+.cost {
+  width: 75px;
+  float: right;
+}
+
+.member {
+  float: left;
+  padding-right: 4rem;
+  padding-top: 4rem;
+}
+.member:last-child {
+  padding-right: 0rem;
+}
+.member img {
+  border-radius: 50%;
+}
+
+footer {
+  padding: 1rem 5%;
+  border-top: 1px solid #00d1c3;
+}
+
+/*=======================================||
+//			RESPONSIVE                   ||
+//=======================================||
+*/
+@media (max-width: 750px) {
+  .wrapper {
+    margin: 8rem 5% 2rem;
+    width: 90%;
+  }
+
+  nav ul {
+    margin: 0;
+  }
+
+  nav li {
+    padding-bottom: 1rem;
+  }
+
+  .description,
+  .cost {
+    width: 100%;
+    float: none;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  h5 {
+    margin: 0.25rem 0;
+  }
 }
